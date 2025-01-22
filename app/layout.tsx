@@ -2,6 +2,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from './components/Navbar'
+import ShopMenu from './components/ShopMenu'
+
 
 export const metadata: Metadata = {
   title: 'Modern Fashion Store',
@@ -16,7 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        <Navbar>
+          <ShopMenu />
+        </Navbar>
         {children}
       </body>
     </html>
